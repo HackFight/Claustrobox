@@ -4,14 +4,27 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 
+[System.Serializable]
+public class DefaultRoom
+{
+    public string Name;
+    public int sceneIndex;
+    [Range(1, 20)]
+    public int MaxPlayers;
+}
+
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
-    void Start()
+    public List<DefaultRoom> defaultRooms;
+
+    public GameObject roomsUI;
+
+    private void Start()
     {
-        ConnectToServer();
+        roomsUI.SetActive(false);
     }
 
-    void ConnectToServer()
+    public void ConnectToServer()
     {
         PhotonNetwork.ConnectUsingSettings();
 
@@ -24,12 +37,30 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         base.OnConnectedToMaster();
 
+        PhotonNetwork.JoinLobby();
+    }
+
+    public override void OnJoinedLobby()
+    {
+        base.OnJoinedLobby();
+        print("Joined the lobby.");
+        roomsUI.SetActive(true);
+    }
+
+    public void InitializeRoom(int defaultRoomIndex)
+    {
+        DefaultRoom roomSettings = defaultRooms[defaultRoomIndex];
+
+        //Load scene
+        PhotonNetwork.LoadLevel(roomSettings.sceneIndex);
+
+        //Create room
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = 10;
+        roomOptions.MaxPlayers = roomSettings.MaxPlayers;
         roomOptions.IsVisible = true;
         roomOptions.IsOpen = true;
 
-        PhotonNetwork.JoinOrCreateRoom("MainRoom", roomOptions, TypedLobby.Default);
+        PhotonNetwork.JoinOrCreateRoom(roomSettings.Name, roomOptions, TypedLobby.Default);
     }
 
     public override void OnJoinedRoom()
