@@ -124,7 +124,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &17376036 stripped
+=======
+--- !u!1 &17376035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17376037}
+  - component: {fileID: 17376036}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &17376036
+>>>>>>> parent of 03e7035 (Multiplayer Base Implementation)
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7895818177387767371, guid: 0f75901c889e76d46a01b7af41d7dd8d,
     type: 3}
@@ -136,6 +157,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2fd14693b6ad314c9be81e9772a0cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  smoothFirstPersonCamera: {fileID: 1349212813}
+  externalCameraCanvas: {fileID: 1311982156}
+  externalCameraScreen: {fileID: 483105340}
+  externalCameraHomePosition: {fileID: 659840549}
+--- !u!4 &17376037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17376035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 03e7035 (Multiplayer Base Implementation)
 --- !u!1 &23306523
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +290,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_InteractionManager: {fileID: 1989015263}
+=======
+  m_InteractionManager: {fileID: 784765940}
+>>>>>>> parent of 03e7035 (Multiplayer Base Implementation)
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -652,7 +699,7 @@ Transform:
   - {fileID: 483105346}
   - {fileID: 1311982157}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &344237138 stripped
 Transform:
@@ -1131,7 +1178,7 @@ PrefabInstance:
     - target: {fileID: 5716092872635040697, guid: e49b729c93e262b4ea386a174ada4c35,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5716092872635040697, guid: e49b729c93e262b4ea386a174ada4c35,
         type: 3}
@@ -1230,7 +1277,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_InteractionManager: {fileID: 1989015263}
+=======
+  m_InteractionManager: {fileID: 784765940}
+>>>>>>> parent of 03e7035 (Multiplayer Base Implementation)
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -1498,6 +1549,52 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1659142910382822368}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &784765939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 784765941}
+  - component: {fileID: 784765940}
+  m_Layer: 0
+  m_Name: XR Interaction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &784765940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784765939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+--- !u!4 &784765941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784765939}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.051546812, y: -0.66165733, z: -0.6323905}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &800443545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1666,7 +1763,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_InteractionManager: {fileID: 1989015263}
+=======
+  m_InteractionManager: {fileID: 784765940}
+>>>>>>> parent of 03e7035 (Multiplayer Base Implementation)
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -1897,7 +1998,7 @@ Transform:
   - {fileID: 1248052268}
   - {fileID: 77339919}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1036881860
 GameObject:
@@ -2009,7 +2110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 784765940}
   m_Colliders:
   - {fileID: 1036881862}
   m_InteractionLayerMask:
@@ -2184,7 +2285,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractionManager
       value: 
+<<<<<<< HEAD
       objectReference: {fileID: 1989015263}
+=======
+      objectReference: {fileID: 784765940}
+>>>>>>> parent of 03e7035 (Multiplayer Base Implementation)
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a24c8c3dca9bb444e8b408a582556878, type: 3}
 --- !u!4 &1248052268 stripped
@@ -2417,7 +2522,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1403974346
 GameObject:
@@ -2659,7 +2764,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_InteractionManager: {fileID: 1989015263}
+=======
+  m_InteractionManager: {fileID: 784765940}
+>>>>>>> parent of 03e7035 (Multiplayer Base Implementation)
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -2937,7 +3046,7 @@ PrefabInstance:
     - target: {fileID: 4938687014235477879, guid: 9615f8d38d40e0346b48f499efa3d724,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4938687014235477879, guid: 9615f8d38d40e0346b48f499efa3d724,
         type: 3}
@@ -3176,7 +3285,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InteractionManager
       value: 
+<<<<<<< HEAD
       objectReference: {fileID: 1989015263}
+=======
+      objectReference: {fileID: 784765940}
+>>>>>>> parent of 03e7035 (Multiplayer Base Implementation)
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a24c8c3dca9bb444e8b408a582556878, type: 3}
 --- !u!1001 &7895818177404994927
